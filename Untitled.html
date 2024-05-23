@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohwer - Venta de Sillas de Oficina</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <header>
+        <h1>Rohwer - Venta de Sillas de Oficina</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#catalogo">Catálogo</a> <!-- Enlace anclado al catálogo -->
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="cover">
+        <img src="cover.jpg.png" alt="Portada">
+        <div class="cover-text">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Ofertas del Mes</h2>
+        <div class="offer">
+            <div class="offer-container">
+                <img src="oferta1.jpg" alt="Oferta 1" class="active"> <!-- Añade la clase "active" a la primera imagen -->
+                <img src="oferta2.jpg" alt="Oferta 2">
+                <img src="oferta3.jpg" alt="Oferta 3">
+            </div>
+            <div class="button-container">
+                <button class="slide-button" onclick="prevSlide()">Anterior</button>
+                <button class="slide-button" onclick="nextSlide()">Siguiente</button>
+            </div>
+        </div>
+        <h2 id="catalogo">Nuestro Catálogo</h2> <!-- Sección de catálogo con ID -->
+        <div class="main-content">
+            <div class="product">
+                <img src="silla1.jpg.jpg" alt="Silla de Oficina 1">
+                <h3>Silla Ergonómica</h3>
+                <p>Precio: $199</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="silla2.jpg.jpg" alt="Silla de Oficina 2">
+                <h3>Silla Ejecutiva</h3>
+                <p>Precio: $249</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Pie de página para la sección de catálogo -->
+        <footer>
+            <p>Pie de página para la sección de catálogo.</p>
+            <div class="contact-info">
+                <h3>Contáctanos</h3>
+                <p>Teléfono: +123456789</p>
+                <p>Correo electrónico: info@rohwer.com</p>
+                <p>Ubicación: Calle Principal, Ciudad, País</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Pie de página para la sección de contacto -->
+    <footer>
+        <p>Pie de página para la sección de contacto.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
